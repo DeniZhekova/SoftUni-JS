@@ -1,7 +1,7 @@
 function cinema(input) {
-    const PREMIERE_PRICE = 12;
-    const NORMAL_PRICE = 7.50;
-    const DISCOUNT_PRICE = 5;
+    const premiere_price = 12;
+    const normal_price = 7.50;
+    const discount_price = 5;
 
     let projectionType = input[0];
     let rows = Number(input[1]); 
@@ -11,9 +11,9 @@ function cinema(input) {
     let total = 0;
 
     switch (projectionType) {
-        case "Premiere": total += totalSeats * PREMIERE_PRICE; break;
-        case "Normal": total += totalSeats * NORMAL_PRICE; break;
-        case "Discount": total += totalSeats * DISCOUNT_PRICE; break;
+        case "Premiere": total += totalSeats * premiere_price; break;
+        case "Normal": total += totalSeats * normal_price; break;
+        case "Discount": total += totalSeats * discount_price; break;
     }
 
     console.log(`${total.toFixed(2)} leva`);
